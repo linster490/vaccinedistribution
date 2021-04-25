@@ -1,0 +1,10 @@
+<AdminCheckbox>
+    disabled: False
+    adaptive_size: True
+    pos_hint: {"center_y": .5}
+
+    MDCheckbox:
+        size_hint: None, None
+        size: "48dp", "48dp"
+        pos_hint: {'center_y': .5}
+        on_active: root.on_restrict_checkbox_active(*args, root.text)

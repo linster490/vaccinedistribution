@@ -1,0 +1,29 @@
+<SignupPage>
+    FloatLayout:
+
+        Button:
+            text:"back"
+            on_release:root.back_to_loginpage()
+            size_hint: (0.3,0.3)
+            pos_hint: {'center_x':0.1,'center_y':0.7}
+        Button:
+            text:"sign up"
+            on_release:root.create_patch(email.text,password.text,username.text)
+
+            size_hint: (0.3,0.3)
+            pos_hint: {'center_x':0.1,'center_y':0.4}
+        TextInput:
+            id: username
+            size_hint:(0.3,0.3)
+            hint_text: "username (only letters and numbers allowed)"
+            pos_hint: {'center_x':0.5,'center_y':0.7}
+        TextInput:
+            id: email
+            size_hint:(0.3,0.3)
+            hint_text: "email"
+            pos_hint: {'center_x':0.5,'center_y':0.5}
+        TextInput:
+            id: password
+            size_hint:(0.3,0.3)
+            hint_text: "password"
+            pos_hint: {'center_x':0.5,'center_y':0.3}

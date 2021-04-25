@@ -1,0 +1,25 @@
+<LoginPage>:
+    FloatLayout:
+        Button:
+            text:"login"
+            on_release:root.on_login(email.text,password.text)
+            size_hint: (0.3,0.3)
+            pos_hint: {'center_x':0.1,'center_y':0.4}
+
+        Button:
+            text:"sign up"
+            on_release:root.sign_up()
+
+            size_hint: (0.3,0.3)
+            pos_hint: {'center_x':0.1,'center_y':0.7}
+
+        TextInput:
+            id: email
+            size_hint:(0.3,0.3)
+            hint_text: "email"
+            pos_hint: {'center_x':0.5,'center_y':0.5}
+        TextInput:
+            id: password
+            size_hint:(0.3,0.3)
+            hint_text: "password"
+            pos_hint: {'center_x':0.5,'center_y':0.3}

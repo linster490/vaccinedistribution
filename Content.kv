@@ -1,0 +1,35 @@
+<ContentPage>:
+    FloatLayout:
+        Button:
+            text:"update age"
+            size_hint:(.3,.3)
+            pos_hint: {'center_x':0.7,'center_y':0.8}
+            on_release: root.on_update_age()
+        Button:
+            text:"update occupation"
+            size_hint:(.3,.3)
+            pos_hint: {'center_x':0.7,'center_y':0.5}
+            on_release: root.on_update_job()
+
+
+        Button:
+            text: "show info"
+            size_hint:(.3,.3)
+            pos_hint: {'center_x':0.1,'center_y':0.2}
+            on_release:root.show_details()
+
+        Button:
+            text:"logout"
+            on_release:root.logout()
+            size_hint: (.2,.2)
+            pos_hint: {'center_x':0.1,'center_y':0.9}
+        Button:
+            text:"Check Vaccine Eligibility"
+            on_release:root.checkforvac()
+            size_hint: (0.3,0.3)
+            pos_hint: {'center_x':0.1,'center_y':0.5}
+        Button:
+            text:"update medical conditions"
+            on_release:root.update_mc()
+            size_hint: (0.3,0.3)
+            pos_hint: {'center_x':0.7,'center_y':0.2}
