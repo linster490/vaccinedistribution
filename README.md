@@ -8,6 +8,7 @@ Current Improvements Being Made
   
 Notes
   -this is only backend
+  -run main.py
   -some parts of code (password/username/email of master account, firebase authentication key) are left out as empty strings for obvious reasons
   -the medical conditions that users are allowed to select are from https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-with-medical-conditions.html#:~:text=Chronic%20lung%20diseases%2C%20including%20COPD,severely%20ill%20from%20COVID%2D19.
   -please suggest changes or ideas (other features the program should include, problems/improvements for code, etc)
